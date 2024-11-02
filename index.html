@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Jacob's Portfolio</h1>
+            <h3>kubus99</h3>
+            <p>Specialist builder on Cubed Community</p>
+        </div>
+    </header>
+    <div>
+        </section>
+        <section id="quote">
+            <blockquote>
+                I'm cooking my own food.<br>Let me use as many spices as I want
+                <span class="author">~ Jacob 2024</span>
+            </blockquote>
+        </section>  
+    </div>
+    <section id="portfolio">
+        <h2>Projects</h2>
+        <div class="gallery">
+            <div class="project">
+                <img src="pictures/pagoda/pic1.png" alt="Pagoda" data-images="pictures/pagoda/pic1.png, pictures/pagoda/pic2.png, pictures/pagoda/pic3.png, pictures/pagoda/pic5.png, pictures/pagoda/pic6.png, pictures/pagoda/pic7.png, pictures/pagoda/pic8.png">
+                <div class="description">Centerpiece of the city of Xiang-Ma's pagoda park</div>
+            </div>
+            <div class="project">
+                <img src="pictures/cathedral/pic1.png" alt="Cathedral" data-images="pictures/cathedral/pic1.png, pictures/cathedral/pic2.png, pictures/cathedral/pic3.png, pictures/cathedral/pic4.png, pictures/cathedral/pic5.png, pictures/cathedral/pic6.png, pictures/cathedral/pic7.png, pictures/cathedral/pic8.png, pictures/cathedral/pic9.png">
+                <div class="description">A gothic giant based on Notre Dame, Tynsky Chram and many others</div>
+            </div>
+            <div class="project">
+                <img src="pictures/yemen/pic1.png" alt="Little Yemen" data-images="pictures/yemen/pic1.png, pictures/yemen/pic2.png, pictures/yemen/pic3.png">
+                <div class="description">Moody, deserted and middle-east-stylised quarter</div>
+            </div>
+            <div class="project">
+                <img src="pictures/thouses/pic1.png" alt="Classical townhouses" data-images="pictures/thouses/pic1.png, pictures/thouses/pic2.png, pictures/thouses/pic3.png, pictures/thouses/pic4.png">
+                <div class="description">Row of traditional townhouses, mainly based on classical european architecture</div>
+            </div>
+            <div class="project">
+                <img src="pictures/paris/pic1.png" alt="Les Maisons de Paris" data-images="pictures/paris/pic1.png, pictures/paris/pic2.png, pictures/paris/pic3.png">
+                <div class="description">A tenement inspired by the unique parisian style of Haussmann</div>
+            </div>
+            <div class="project">
+                <img src="pictures/andea/pic1.png" alt="Andean Revitalisation" data-images="pictures/andea/pic1.png, pictures/andea/pic2.png, pictures/andea/pic3.png, pictures/andea/pic4.png, pictures/andea/pic5.png, pictures/andea/pic6.png, pictures/andea/pic7.png">
+                <div class="description">Renovated pieces of south-coastal Andean architectural heritage</div>
+            </div>
+            <div class="project">
+                <img src="pictures/nature/pic1.png" alt="Blocky flora" data-images="pictures/nature/pic2.png, pictures/nature/pic3.png, pictures/nature/pic4.png">
+                <div class="description">Ecosystems potrayed with pixels</div>
+            </div>
+            <div class="project">
+                <img src="pictures/other/pic1.png" alt="Other projects" data-images="pictures/other/pic2.png, pictures/other/pic3.png, pictures/other/pic4.png, pictures/other/pic5.png, pictures/other/pic6.png">
+                <div class="description">Other projects worth notice</div>
+            </div>
+            <div class="project">
+                <img src="pictures/older/pic1.png" alt="Older projects" data-images="pictures/older/pic2.png, pictures/older/pic3.png, pictures/older/pic4.png, pictures/older/pic5.png, pictures/older/pic6.png, pictures/older/pic7.png, pictures/older/pic8.png, pictures/older/pic9.png, pictures/older/pic10.png">
+                <div class="description">An insight on my past experience</div>
+            </div>
+
+            </div>
+    </div>                
+    </section>
+    <section id="about">
+        <div class="vertical-line-top"></div>
+        <div class="vertical-line-bottom"></div>
+        <h2>About me</h2>
+        <p>Hello there, I'm Jacob.<br>You probably know me as a fellow block-placer<br>that preferably works in trad but nonetheless loves to experiment<br>with any block that I just find myself holding.<br>I've been a member of the Cubed Community for<br>almost 3 years now (Specialist for 2) and these are mainly<br>some of my more recent creations scattered across all of<br>Cubed</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/xnnqpgrw" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <span id="prev" class="prev">&#10094;</span>
+        <img class="modal-content" id="modalImg">
+        <span id="next" class="next">&#10095;</span>
+        <div id="caption"></div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <span class="footer-left">@kubus99 | kubus99#6905</span>
+            <img src="pictures/logo.png" class="footer-logo">
+            <span class="footer-right">Cubed Community | All rights reserved</span>
+        </div>
+    </footer>
+</body>
+</html>
