@@ -1,8 +1,3 @@
-document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Thx for contacting! We'll be in touch.");
-});
-
 document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImg");
