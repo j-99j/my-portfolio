@@ -1,29 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("#contact form");
+    const form = document.getElementById("contact-form");
 
-    form.addEventListener("submit", async function (event) {
-        event.preventDefault();
+    form.addEventListener("submit", function (event) {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
 
-        const formData = new FormData(form);
-        const action = form.getAttribute("action");
-
-        try {
-            const response = await fetch(action, {
-                method: "POST",
-                body: formData,
-                headers: {
-                    Accept: "application/json",
-                },
-            });
-
-            if (response.ok) {
-                alert("Thank you! Your message has been sent.");
-                form.reset();
-            } else {
-                alert("Oops! There was a problem submitting your form.");
-            }
-        } catch (error) {
-            alert("Error: Unable to submit the form. Please try again later.");
+        if (!name || !email || !message) {
+            event.preventDefault();
+            alert("Please fill in all required fields.");
+        } else {
+            alert("Submitting form...");
         }
     });
 
