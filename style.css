@@ -345,3 +345,78 @@ footer {
     margin: 0 auto;
     display: block;
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-me-box {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer div {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    .quote-section {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .modal-content {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    button, a {
+        padding: 10px 15px;
+        font-size: 1rem;
+        display: inline-block;
+    }    
+}
+
+body {
+    font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
