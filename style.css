@@ -147,6 +147,7 @@ form button {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .modal-content {
@@ -154,9 +155,10 @@ form button {
     max-height: 80vh;
     width: auto;
     height: auto;
-    margin: auto;
+    margin: 0;
     display: block;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .modal .prev, .modal .next {
