@@ -401,8 +401,8 @@ footer {
         gap: 10px;
     }
     .modal-content {
-        max-width: 80%;
-        max-height: 80%;
+        max-width: 90%;
+        max-height: 70%;
     }
     button, a {
         padding: 10px 15px;
@@ -411,12 +411,20 @@ footer {
     }    
 }
 
-body {
-    font-size: 16px;
-}
-
 @media (max-width: 480px) {
     body {
         font-size: 14px;
     }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
