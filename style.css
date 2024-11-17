@@ -151,12 +151,13 @@ form button {
 
 .modal-content {
     max-width: 90%;
-    max-height: 80vh;
+    max-height: 90%;
     width: auto;
     height: auto;
     margin: auto;
     display: block;
     border-radius: 10px;
+    object-fit: contain;
 }
 
 .modal .prev, .modal .next {
@@ -177,6 +178,12 @@ form button {
 
 .modal .next {
     right: 15px;
+}
+
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 #caption {
