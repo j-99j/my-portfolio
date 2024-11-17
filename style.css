@@ -181,6 +181,12 @@ form button {
     right: 15px;
 }
 
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
 #caption {
     text-align: center;
     color: #ccc;
