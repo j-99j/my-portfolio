@@ -82,6 +82,7 @@ header h3 {
 .project {
     flex: 1 1 calc(50% - 1rem);
     position: relative;
+    overflow: hidden;
 }
 
 .project img {
@@ -147,6 +148,8 @@ form button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .modal-content {
@@ -195,6 +198,8 @@ body.modal-open {
     font-family: "Times New Roman", Times, serif;
     font-size: 2rem;
     margin: 0 auto;
+    margin-top: 1rem;
+    word-wrap: break-word;
 }
 
 .close {
