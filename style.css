@@ -359,6 +359,12 @@ footer {
     width: auto;
     margin: 0 auto;
     display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-logo-link:hover .footer-logo {
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
 
 @media (max-width: 768px) {
@@ -498,10 +504,9 @@ html {
     z-index: 1;
 
     display: inline-block;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
     padding-bottom: 0.2rem;
 
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(50, 50, 50, 0.9);
     padding: 0.5rem 1rem;
     border-radius: 5px;
 }
@@ -526,13 +531,14 @@ html {
 .upcoming-item::before {
     content: '';
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     top: -20px;
     left: -20px;
     width: 130%;
     height: 120%;
     background-color: rgba(200, 200, 200, 0.2);
     transform: rotate(-2deg);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .upcoming-item:nth-child(2)::before {
@@ -557,7 +563,7 @@ html {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
     filter: brightness(0.9);
     transition: transform 0.3s ease, filter 0.3s ease;
-    z-index: 1;
+    z-index: 2;
 }
 
 .upcoming-item img:hover {
