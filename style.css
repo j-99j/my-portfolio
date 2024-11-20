@@ -192,15 +192,15 @@ body.modal-open {
 #caption {
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
+    padding: 0 1rem;
     max-width: 90%;
     font-weight: bold;
     font-family: "Times New Roman", Times, serif;
-    font-size: 2rem;
+    font-size: 1.1rem;
     margin: 0 auto;
     word-wrap: break-word;
     margin-top: 1rem;
-    position: relative;
+    position: static;
     top: -20px;
 }
 
@@ -455,10 +455,18 @@ html {
 }
 
 #upcoming {
+    position: relative;
     text-align: center;
-    padding: 2rem;
+    padding: 4rem 2rem;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
+    overflow: hidden;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    background-image: linear-gradient(white 1px, transparent 1px),
+    linear-gradient(90deg, white 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-position: center;
 }
 
 #upcoming h2 {
@@ -479,17 +487,56 @@ html {
     max-width: 300px;
     text-align: center;
     margin: 0 auto;
+    position: relative;
+    display: inline-block;
+}
+
+.upcoming-item::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+    width: 120%;
+    height: 110%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: rotate(-2deg);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.upcoming-item:nth-child(2)::before {
+    top: 20px;
+    left: -20px;
+    width: 130%;
+    height: 100%;
+    transform: rotate(3deg);
+}
+
+.upcoming-item:nth-child(3)::before {
+    top: -15px;
+    left: 15px;
+    width: 110%;
+    height: 120%;
+    transform: rotate(-4deg);
 }
 
 .upcoming-item img {
     width: 100%;
     border-radius: 10px;
-    transition: transform 0.3s ease;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+    filter: brightness(0.9);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 1;
 }
 
 .upcoming-item img:hover {
     transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.upcoming-item:hover::before {
+    transform: rotate(0deg);
+    background-color: rgba(255, 255, 255, 0.2); 
 }
 
 .upcoming-item p {
@@ -500,11 +547,29 @@ html {
 
 .coming-soon-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #afafaf;
     margin-top: -0.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+}
+
+.upcoming-title {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #ddd;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .upcoming-gallery {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .upcoming-item {
+        max-width: 100%;
+    }
 }
