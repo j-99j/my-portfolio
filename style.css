@@ -199,6 +199,9 @@ body.modal-open {
     font-size: 2rem;
     margin: 0 auto;
     word-wrap: break-word;
+    margin-top: 1rem;
+    position: relative;
+    top: -20px;
 }
 
 .close {
@@ -438,4 +441,15 @@ body {
 html {
     box-sizing: border-box;
     overflow-x: hidden;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
