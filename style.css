@@ -446,10 +446,65 @@ html {
 .section {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: opacity 1.2s ease, transform 1.2s ease;
 }
 
 .section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+#upcoming {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+#upcoming h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.upcoming-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.upcoming-item {
+    flex: 1 1 calc(33% - 1rem);
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.upcoming-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.upcoming-item img:hover {
+    transform: scale(1.05);
+}
+
+.upcoming-item p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.coming-soon-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #afafaf;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
