@@ -69,3 +69,12 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', checkVisibility);
     checkVisibility();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".menu-icon");
+    const menuOverlay = document.querySelector(".menu-overlay");
+
+    menuIcon.addEventListener("click", function () {
+        menuOverlay.classList.toggle("active");
+    });
+});
