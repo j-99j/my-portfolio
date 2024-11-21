@@ -202,6 +202,7 @@ body.modal-open {
     margin-top: 1rem;
     position: relative;
     top: -10px;
+    bottom: +10px;
 }
 
 .close {
@@ -474,7 +475,7 @@ html {
     linear-gradient(90deg, white 2px, transparent 2px);
     background-size: 100px 100px;
     background-position: center;
-    z-index: -2;
+    z-index: 1;
 }
 
 #upcoming::after {
@@ -491,24 +492,7 @@ html {
     background-position: 20px 20px;
     transform: rotate(-5deg);
     opacity: 0.5;
-    z-index: -1;
-}
-
-#upcoming h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
-    margin-bottom: 1.5rem;
-    color: #fff;
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
-    position: relative;
-    z-index: 1;
-
-    display: inline-block;
-    padding-bottom: 0.2rem;
-
-    background-color: rgba(50, 50, 50, 0.9);
-    padding: 0.5rem 1rem;
-    border-radius: 0;
+    z-index: 2;
 }
 
 .upcoming-gallery {
@@ -525,7 +509,7 @@ html {
     margin: 0 auto;
     position: relative;
     display: inline-block;
-    z-index: 1;
+    z-index: 3;
 }
 
 .upcoming-item::before {
@@ -557,13 +541,21 @@ html {
     transform: rotate(-6deg);
 }
 
+.upcoming-item:nth-child(4)::before {
+    top: -15px;
+    left: 15px;
+    width: 125%;
+    height: 110%;
+    transform: rotate(5deg);
+}
+
 .upcoming-item img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
     filter: brightness(0.9);
     transition: transform 0.3s ease, filter 0.3s ease;
-    z-index: 2;
+    z-index: 4;
     position: relative;
 }
 
@@ -587,10 +579,31 @@ html {
     border-radius: 5px;
 }
 
-.coming-soon-title {
+#upcoming h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+    position: relative;
+    z-index: 3;
+
+    display: inline-block;
+    padding-bottom: 0.2rem;
+
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+}
+
+.upcoming-item:hover {
+    outline: 2px solid red;
+}
+
+.wip-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
-    color: #afafaf;
+    color: #741c1c;
     margin-top: -0.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
