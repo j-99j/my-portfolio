@@ -339,6 +339,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .footer-content {
@@ -584,7 +585,7 @@ html {
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
     color: #fff;
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+    text-shadow: 0px 0px 8px rgb(#800020);
     position: relative;
     z-index: 3;
 
@@ -594,6 +595,10 @@ html {
     background-color: rgba(50, 50, 50, 0.9);
     padding: 0.5rem 1rem;
     border-radius: 0;
+}
+
+#upcoming h2:hover {
+    transform: rotate(-2deg);
 }
 
 .upcoming-item:hover {
@@ -645,6 +650,7 @@ html {
     color: white;
     z-index: 9;
     transition: left 0.3s ease;
+    padding-top: 80px;
 }
 
 .menu-overlay.active {
@@ -686,13 +692,15 @@ html {
     color: red;
 }
 
-.menu-category.gallery h3 {
+.menu-category.gallery h3 a {
     font-size: 1.5rem;
     text-transform: uppercase;
     transition: color 0.3s ease;
+    text-decoration: none;
+    color: white;
 }
 
-.menu-category.gallery h3:hover {
+.menu-category.gallery h3 a:hover {
     color: red;
 }
 
@@ -702,19 +710,34 @@ html {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
-    margin-top: 1rem;
+    margin-top: -1px;
+    background: linear-gradient(to top, rgba(128, 0, 32, 0.5), rgba(128, 0, 32, 0));
 }
 
 #contact {
     position: relative;
     overflow: hidden;
-    height: 300px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
-    transition: height 0.5s ease, background 0.5s ease;
+    height: 200px;
+    background: none;
+}
+
+#contact::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    z-index: 1;
 }
 
 #contact:hover {
     height: auto;
+}
+
+#contact:hover::after {
     background: none;
 }
 
@@ -722,6 +745,7 @@ html {
     padding: 2rem;
     opacity: 0.5;
     transition: opacity 0.5s ease;
+    z-index: 2;
 }
 
 #contact:hover .contact-content {
