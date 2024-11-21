@@ -202,7 +202,7 @@ body.modal-open {
     margin-top: 1rem;
     position: relative;
     top: -10px;
-    bottom: +10px;
+    bottom: -20px;
 }
 
 .close {
@@ -364,7 +364,7 @@ footer {
 }
 
 .footer-logo-link:hover .footer-logo {
-    transform: scale(1.1);
+    transform: scale(1.2);
     filter: brightness(1.2);
 }
 
@@ -603,12 +603,13 @@ html {
 .wip-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
-    color: #741c1c;
+    color: rgba(255, 255, 255, 0.6);
     margin-top: -0.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.6)
 }
 
 .upcoming-title {
