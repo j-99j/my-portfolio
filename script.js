@@ -77,4 +77,13 @@ document.addEventListener("DOMContentLoaded", function () {
     menuIcon.addEventListener("click", function () {
         menuOverlay.classList.toggle("active");
     });
+
+    document.addEventListener("click", function (event) {
+        if (
+            !menuOverlay.contains(event.target) &&
+            !menuIcon.contains(event.target)
+        ) {
+            menuOverlay.classList.remove("active");
+        }
+    });
 });
