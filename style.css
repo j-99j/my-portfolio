@@ -677,6 +677,30 @@ html {
     background: none;
 }
 
+.menu-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease, background 0.3s ease;
+    text-decoration: none;
+}
+
+.menu-category h3:hover {
+    color: red;
+    background: none;
+}
+
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-category ul li {
+    margin: 5px 0;
+}
+
 .menu-category ul li a {
     color: white;
     text-decoration: none;
@@ -692,16 +716,6 @@ html {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.menu-category.resources h3 a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.menu-category.resources h3 a:hover {
-    color: red;
 }
 
 .after-footer {
