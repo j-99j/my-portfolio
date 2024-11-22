@@ -48,6 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "none";
         document.body.classList.remove("modal-open");
     }
+
+    modal.style.display = "none";
 });
 
 document.addEventListener("DOMContentLoaded", function () {
