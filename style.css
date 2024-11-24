@@ -343,7 +343,6 @@ footer {
     position: relative;
     background: linear-gradient(to bottom, #000000, rgba(128, 0, 32, 0.8));
     z-index: 2;
-    border-top: 2px solid white;
 }
 
 .footer-content {
@@ -745,6 +744,7 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    border-top: 2px solid white;
 }
 
 .after-footer .footer-left, .after-footer .footer-right {
