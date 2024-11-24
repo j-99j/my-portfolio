@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
     color: #000000;
 
-    background-image: url('pictures/bg2.png');
+    background-image: url('pictures/bg/bg2.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -744,7 +744,7 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-top: 2px solid white;
+    border-top: 2px solid black;
 }
 
 .after-footer .footer-left, .after-footer .footer-right {

@@ -1,0 +1,24 @@
+.download-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.download-button {
+    display: inline-block;
+    background: #444;
+    color: white;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.download-button:hover {
+    background: #800020;
+    transform: scale(1.05);
+}

@@ -1,0 +1,31 @@
+#gallery-content {
+    padding: 2rem;
+    background-image: url('../pictures/bg2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.project-section {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.project-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.image-row img {
+    max-width: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
