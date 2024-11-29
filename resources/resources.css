@@ -22,3 +22,14 @@
     background: #800020;
     transform: scale(1.05);
 }
+
+h2 {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+body {
+    background-image: url('../pictures/bg/bg4.png');
+}
