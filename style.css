@@ -333,7 +333,7 @@ body.modal-open {
 }
 
 footer {
-    background-color: #000000;
+    background-color: rgba(128, 0, 32, 0.8);
     color: #fff;
     padding: 1.5rem 0;
     display: flex;
@@ -341,7 +341,7 @@ footer {
     align-items: center;
     margin-bottom: 0;
     position: relative;
-    background: linear-gradient(to bottom, #000000, rgba(128, 0, 32, 0.8));
+    background: linear-gradient(to bottom, rgba(128, 0, 32, 0.8), #000000);
     z-index: 2;
 }
 
@@ -734,7 +734,7 @@ html {
 }
 
 .after-footer {
-    background-color: rgba(128, 0, 32, 0.8);
+    background-color: solid black;
     color: white;
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
@@ -744,7 +744,7 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-top: 2px solid black;
+    border-top: 3px solid white;
 }
 
 .after-footer .footer-left, .after-footer .footer-right {
@@ -755,13 +755,13 @@ html {
 .after-footer .footer-left {
     text-align: left;
     max-width: 50%;
-    color: black
+    color: white;
 }
 
 .after-footer .footer-right {
     text-align: right;
     max-width: 50%;
-    color:black
+    color: white;
 }
 
 .after-footer p {
