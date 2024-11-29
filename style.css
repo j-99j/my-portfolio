@@ -734,7 +734,7 @@ html {
 }
 
 .after-footer {
-    background-color: solid black;
+    background-color: black;
     color: white;
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
