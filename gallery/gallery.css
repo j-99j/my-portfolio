@@ -12,12 +12,11 @@
 .project-section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
-    color: white;
+    color: rgba(128, 0, 32, 0.8);
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
     margin-bottom: 1rem;
     position: relative;
-    display: inline-block;
-    z-index: 3;
+    z-index: 2;
     padding: 0.5rem 1rem;
 }
 
@@ -77,4 +76,35 @@ body {
 .section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+#reminder {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(37, 37, 37, 0.6);
+    color: #fff;
+    position: relative;
+    border: 2px solid #333;
+    padding: 2rem;
+    margin-bottom: 6rem;
+}
+
+#reminder h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+#reminder h2:hover {
+    color: red;
+    background: none;
+}
+
+#reminder p {
+    font-family: Arial, sans-serif;
+    color: #ddd;
 }
