@@ -744,7 +744,7 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-top: 2px #800020;
+    border-top: 2px rgba(128, 0, 32, 0.8);
 }
 
 .after-footer .footer-left, .after-footer .footer-right {
