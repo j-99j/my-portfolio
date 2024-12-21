@@ -137,7 +137,7 @@ body {
     bottom: 0;
     width: 2px;
     z-index: -1;
-    background-color: red;
+    background-color: darkgray;
 }
 
 .vertical-line.left {
